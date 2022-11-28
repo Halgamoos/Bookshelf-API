@@ -66,7 +66,7 @@ Takes two numbers and returns the sum.
 
 Takes two numbers and returns the sum.
 
-### Books
+### Books Documentation
 
 #### Get all Bookshelves
 
