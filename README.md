@@ -225,6 +225,7 @@ POST .../api/Bookshelf/
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `int` | **Required**. Id of Book to fetch |
+| `BookshelfId`      | `int` | **Required**. Id of Bookshelf to add book to |
 
 ##### Example JSON Request Body Requirements
 
