@@ -217,7 +217,7 @@ GET .../api/Bookshelf/
 }
 ```
 
-
+#### Add a new book to an existing bookshelf
 ```
 POST .../api/Bookshelf/
 ```
