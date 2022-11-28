@@ -24,7 +24,7 @@ GET .../api/Bookshelf/
 #### Get Bookshelf by Id
 
 ```http
-  GET .../api/Bookshelf/{id}
+GET .../api/Bookshelf/{id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -34,12 +34,12 @@ GET .../api/Bookshelf/
 #### Create a new Bookshelf
 
 ```http
-  POST ../api/Bookshelf/
+POST ../api/Bookshelf/
 ```
 
 ##### JSON Request Body Requirements
 
-```http
+```json
 {
     "ShelfName": "String"
 }
@@ -47,7 +47,7 @@ GET .../api/Bookshelf/
 
 ##### Example JSON Body Response
 
-```http
+```json
 {
 }
 ```
@@ -56,7 +56,7 @@ GET .../api/Bookshelf/
 #### Update an existing Bookshelf
 
 ```http
-  PUT .../api/Bookshelf/{id}
+PUT .../api/Bookshelf/{id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -66,7 +66,7 @@ GET .../api/Bookshelf/
 #### Delete an existing Bookshelf
 
 ```http
-  Delete .../api/Bookshelf/{id}
+Delete .../api/Bookshelf/{id}
 ```
 
 | Parameter | Type     | Description                       |
@@ -78,11 +78,11 @@ GET .../api/Bookshelf/
 #### Get all Bookshelves
 
 ```http
-  GET .../api/Bookshelf/
+GET .../api/Bookshelf/
 ```
 
 ```http
-  GET .../api/Bookshelf/{id}
+GET .../api/Bookshelf/{id}
 ```
 
 | Parameter | Type     | Description                       |
