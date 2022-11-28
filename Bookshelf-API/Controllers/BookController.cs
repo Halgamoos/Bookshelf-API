@@ -35,7 +35,7 @@ namespace Bookshelf_API.Controllers
 
         // POST: api/Book
         [HttpPost]
-        public async Task<Response<BookView>> CreateBook([FromBody] UpdateOrCreateBookRequest book_request)
+        public async Task<Response<BookView>> AddBookToBookshelf([FromBody] UpdateOrCreateBookRequest book_request)
         {
             var bookshelf = await DbContext.Bookshelves.FindAsync(book_request.BookshelfId);
 

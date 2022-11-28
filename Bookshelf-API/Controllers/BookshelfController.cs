@@ -71,7 +71,7 @@ namespace Bookshelf_API.Controllers
 
         // POST: api/Bookshelf
         [HttpPost]
-        public async Task<Response<BookshelfView>> CreateBookshelf([FromBody] UpdateOrCreateBookshelfRequest bookshelf_request)
+        public async Task<Response<BookshelfView>> CreateNewBookshelf([FromBody] UpdateOrCreateBookshelfRequest bookshelf_request)
         {
             var bookshelf = new Bookshelf
             {

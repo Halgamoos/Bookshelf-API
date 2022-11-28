@@ -2,17 +2,36 @@
 
 ## Why Bookshelf API?
 
-### Bookshelves Documentation
+#### Database and relationship Diagram
+
+#### SQL Script
+
+```sql
+CREATE DATABASE BookshelfDB;
+
+CREATE TABLE Bookshelves (
+    Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    ShelfName VARCHAR(100) NOT NULL,
+);
+
+CREATE TABLE Books (
+    Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    Title VARCHAR(100) NOT NULL,
+    Author VARCHAR(100) NOT NULL,
+    Pages INT NOT NULL,
+    BookDescription VARCHAR(1000) NOT NULL,
+    BookshelfId INT NOT NULL,
+    FOREIGN KEY (BookshelfId) REFERENCES Bookshelves(Id)
+);
+```
+
+### Bookshelves API Documentation
 
 #### Get all Bookshelves
 
 ```http
   GET .../api/Bookshelf/
 ```
-
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
 
 #### Get Bookshelf by Id
 
@@ -22,11 +41,7 @@
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
+| `id`      | `int`    | **Required**. Id of Bookshelf to fetch |
 
 #### Create a new Bookshelf
 
@@ -34,9 +49,21 @@ Takes two numbers and returns the sum.
   POST .../api/Bookshelf/
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+##### JSON Request Body Requirements
+
+```http
+{
+    "ShelfName": "String"
+}
+```
+
+##### Example JSON Body Response
+
+```http
+{
+}
+```
+
 
 #### Update an existing Bookshelf
 
@@ -46,11 +73,7 @@ Takes two numbers and returns the sum.
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
+| `id`      | `int`    | **Required**. Id of Bookshelf to update|
 
 #### Delete an existing Bookshelf
 
@@ -60,11 +83,7 @@ Takes two numbers and returns the sum.
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
+| `id`      | `int` | **Required**. Id of Bookshelf to delete |
 
 ### Books Documentation
 
@@ -74,20 +93,10 @@ Takes two numbers and returns the sum.
   GET .../api/Bookshelf/
 ```
 
-| Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
-
-#### Get Bookshelf by Id
-
 ```http
   GET .../api/Bookshelf/{id}
 ```
 
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
-| `id`      | `string` | **Required**. Id of item to fetch |
-
-#### add(num1, num2)
-
-Takes two numbers and returns the sum.
+| `id`      | `int` | **Required**. Id of Book to fetch |
