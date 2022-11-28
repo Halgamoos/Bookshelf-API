@@ -12,7 +12,5 @@ CREATE TABLE Books (
     Pages INT NOT NULL,
     BookDescription VARCHAR(1000) NOT NULL,
     BookshelfId INT NOT NULL,
+    FOREIGN KEY (BookshelfId) REFERENCES Bookshelves(Id)
 );
-
-ALTER TABLE Books Add Bookshelf INT NOT NULL;
-ALTER TABLE Books ADD CONSTRAINT Bookshelf FOREIGN KEY (Bookshelf) REFERENCES Bookshelves(Id);
