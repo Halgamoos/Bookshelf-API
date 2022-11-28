@@ -17,8 +17,8 @@ For example, a dedicated bookshelf for solely manga.
 
 #### Get all Bookshelves
 
-```http
-  GET .../api/Bookshelf/
+```
+GET .../api/Bookshelf/
 ```
 
 #### Get Bookshelf by Id
