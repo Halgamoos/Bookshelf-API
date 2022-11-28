@@ -122,7 +122,7 @@ namespace Bookshelf_API.Controllers
                 ).ToList()
             };
 
-            return new(200, $"Bookshelf of id {bookshelfView.Id} and name '{bookshelfView.ShelfName}' has been updated!", bookshelfView);
+            return new(200, $"Bookshelf of id {bookshelfView.Id} and name '{bookshelfView.ShelfName}' has been updated", bookshelfView);
         }
 
         // DELETE: api/Bookshelf/{id}
