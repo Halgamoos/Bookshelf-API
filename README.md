@@ -7,27 +7,6 @@ I have so many books in my book shelf and lose track of the books that I have. A
 #### Database and relationship Diagram
 <img width="799" alt="Screenshot 2022-11-28 at 2 33 51 PM" src="https://user-images.githubusercontent.com/24259728/204365009-8bced4b3-a6fd-4da4-b73e-6d3f208ff649.png">
 
-#### SQL Script
-
-```sql
-CREATE DATABASE BookshelfDB;
-
-CREATE TABLE Bookshelves (
-    Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    ShelfName VARCHAR(100) NOT NULL,
-);
-
-CREATE TABLE Books (
-    Id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    Title VARCHAR(100) NOT NULL,
-    Author VARCHAR(100) NOT NULL,
-    Pages INT NOT NULL,
-    BookDescription VARCHAR(1000) NOT NULL,
-    BookshelfId INT NOT NULL,
-    FOREIGN KEY (BookshelfId) REFERENCES Bookshelves(Id)
-);
-```
-
 ### Bookshelves API Documentation
 
 #### Get all Bookshelves
