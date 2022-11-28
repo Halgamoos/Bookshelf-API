@@ -3,6 +3,7 @@
 ## Why Bookshelf API?
 
 #### Database and relationship Diagram
+<img width="799" alt="Screenshot 2022-11-28 at 2 33 51 PM" src="https://user-images.githubusercontent.com/24259728/204365009-8bced4b3-a6fd-4da4-b73e-6d3f208ff649.png">
 
 #### SQL Script
 
