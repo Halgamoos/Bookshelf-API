@@ -47,7 +47,7 @@ CREATE TABLE Books (
 #### Create a new Bookshelf
 
 ```http
-  POST .../api/Bookshelf/
+  POST ../api/Bookshelf/
 ```
 
 ##### JSON Request Body Requirements
