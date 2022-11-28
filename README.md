@@ -2,6 +2,8 @@
 
 ## Why Bookshelf API?
 
+I have so many books in my book shelf and lose track of the books that I have. At the moment, to find out if I have a book in my book shelf I have to manually search for each book in my shelf which worst case takes linear time. With this API, I can make a GET request and find out if I currently have the book instantly!
+
 #### Database and relationship Diagram
 <img width="799" alt="Screenshot 2022-11-28 at 2 33 51 PM" src="https://user-images.githubusercontent.com/24259728/204365009-8bced4b3-a6fd-4da4-b73e-6d3f208ff649.png">
 
