@@ -180,7 +180,7 @@ Delete .../api/Bookshelf/{id}
 #### Get all Books
 
 ```
-GET .../api/Bookshelf/
+GET .../api/Book/
 ```
 
 ##### Example JSON Body Response
@@ -219,7 +219,7 @@ GET .../api/Bookshelf/
 
 #### Add a new book to an existing bookshelf
 ```
-POST .../api/Bookshelf/
+POST .../api/Book/
 ```
 
 | Parameter | Type     | Description                       |
